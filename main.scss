@@ -20,19 +20,19 @@
   @include transform(rotate(0deg));
 }
 
-.anim {
-  animation: 2s infinite normal roll;
+.shake {
+  animation: 2s 1 alternate shake;
 }
 
-@keyframes roll {
+@keyframes shake {
   0% {
     @include transform(rotate(0deg));
   }
-  25% {
-    @include transform(rotate(10deg));
+  15%, 45%, 75% {
+    @include transform(rotate(5deg));
   }
-  75% {
-    @include transform(rotate(-10deg));
+  30%, 60%, 90% {
+    @include transform(rotate(-5deg));
   }
   100% {
     @include transform(rotate(0deg));

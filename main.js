@@ -28,7 +28,7 @@
       }, duration + delay);
     }
 
-    startShaking('#shake-btn', 'anim', 1000, 3000);
+    startShaking('#shake-btn', 'shake', 1000, 3000);
     
   });
 })();

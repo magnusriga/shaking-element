@@ -21,6 +21,7 @@
 }
 
 .shake {
+  /* duration is reset in the JS */
   animation: 2s 1 alternate shake;
 }
 
